@@ -421,7 +421,7 @@ function createFinalBoard(game) {
     let board = '';
     for (let i = 0; i < 9; i++) {
         const cell = game.board[i];
-        board += cell === 'X' ? '❌' : cell === 'O' ? '⭕' : '⬛';
+        board += cell === 'X' ? '❌' : cell === 'O' ? '⭕' : '⬜';
         if ((i + 1) % 3 === 0 && i < 8) board += '\n';
     }
     return board;
